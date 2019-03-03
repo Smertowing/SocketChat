@@ -8,20 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		F3098BF0222C5D5800ED70FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098BEF222C5D5800ED70FE /* AppDelegate.swift */; };
-		F3098BF2222C5D5800ED70FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098BF1222C5D5800ED70FE /* ViewController.swift */; };
-		F3098BF5222C5D5800ED70FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3098BF3222C5D5800ED70FE /* Main.storyboard */; };
 		F3098BF7222C5D5900ED70FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3098BF6222C5D5900ED70FE /* Assets.xcassets */; };
 		F3098BFA222C5D5900ED70FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3098BF8222C5D5900ED70FE /* LaunchScreen.storyboard */; };
+		F3098C03222C5DB600ED70FE /* SocketRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C02222C5DB600ED70FE /* SocketRoom.swift */; };
+		F3098C05222C5E0300ED70FE /* SocketMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C04222C5E0300ED70FE /* SocketMessage.swift */; };
+		F3098C08222C5E9D00ED70FE /* StringExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C07222C5E9D00ED70FE /* StringExtenstions.swift */; };
+		F3098C0C222C621C00ED70FE /* JoinChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C0B222C621C00ED70FE /* JoinChatViewController.swift */; };
+		F3098C0E222C67FE00ED70FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C0D222C67FE00ED70FE /* UIViewControllerExtensions.swift */; };
+		F3098C10222C695000ED70FE /* SocketRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C0F222C695000ED70FE /* SocketRoomViewController.swift */; };
+		F3098C12222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */; };
+		F3098C14222C6BBE00ED70FE /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C13222C6BBE00ED70FE /* MessageTableViewCell.swift */; };
+		F3098C16222C6CF100ED70FE /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C15222C6CF100ED70FE /* MessageInputView.swift */; };
+		F3098C18222C6D6000ED70FE /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C17222C6D6000ED70FE /* Label.swift */; };
+		F3098C1A222C6DAB00ED70FE /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C19222C6DAB00ED70FE /* Layouts.swift */; };
+		F3098C1D222C74E900ED70FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3098C1B222C74E900ED70FE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F3098BEC222C5D5800ED70FE /* SocketChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3098BEF222C5D5800ED70FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3098BF1222C5D5800ED70FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3098BF4222C5D5800ED70FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3098BF6222C5D5900ED70FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3098BF9222C5D5900ED70FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3098BFB222C5D5900ED70FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3098C02222C5DB600ED70FE /* SocketRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRoom.swift; sourceTree = "<group>"; };
+		F3098C04222C5E0300ED70FE /* SocketMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketMessage.swift; sourceTree = "<group>"; };
+		F3098C07222C5E9D00ED70FE /* StringExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtenstions.swift; sourceTree = "<group>"; };
+		F3098C0B222C621C00ED70FE /* JoinChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinChatViewController.swift; sourceTree = "<group>"; };
+		F3098C0D222C67FE00ED70FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		F3098C0F222C695000ED70FE /* SocketRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRoomViewController.swift; sourceTree = "<group>"; };
+		F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRoomViewControllerExtension.swift; sourceTree = "<group>"; };
+		F3098C13222C6BBE00ED70FE /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		F3098C15222C6CF100ED70FE /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		F3098C17222C6D6000ED70FE /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		F3098C19222C6DAB00ED70FE /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
+		F3098C1C222C74E900ED70FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,56 @@
 		F3098BEE222C5D5800ED70FE /* SocketChat */ = {
 			isa = PBXGroup;
 			children = (
-				F3098BEF222C5D5800ED70FE /* AppDelegate.swift */,
-				F3098BF1222C5D5800ED70FE /* ViewController.swift */,
-				F3098BF3222C5D5800ED70FE /* Main.storyboard */,
+				F3098C0A222C61CD00ED70FE /* ViewControllers */,
+				F3098C09222C61BB00ED70FE /* Views */,
+				F3098C06222C5E8600ED70FE /* Extensions */,
+				F3098C01222C5D7F00ED70FE /* Networking */,
 				F3098BF6222C5D5900ED70FE /* Assets.xcassets */,
+				F3098BEF222C5D5800ED70FE /* AppDelegate.swift */,
 				F3098BF8222C5D5900ED70FE /* LaunchScreen.storyboard */,
 				F3098BFB222C5D5900ED70FE /* Info.plist */,
 			);
 			path = SocketChat;
+			sourceTree = "<group>";
+		};
+		F3098C01222C5D7F00ED70FE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F3098C02222C5DB600ED70FE /* SocketRoom.swift */,
+				F3098C04222C5E0300ED70FE /* SocketMessage.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F3098C06222C5E8600ED70FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F3098C07222C5E9D00ED70FE /* StringExtenstions.swift */,
+				F3098C0D222C67FE00ED70FE /* UIViewControllerExtensions.swift */,
+				F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */,
+				F3098C19222C6DAB00ED70FE /* Layouts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F3098C09222C61BB00ED70FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3098C1B222C74E900ED70FE /* Main.storyboard */,
+				F3098C13222C6BBE00ED70FE /* MessageTableViewCell.swift */,
+				F3098C15222C6CF100ED70FE /* MessageInputView.swift */,
+				F3098C17222C6D6000ED70FE /* Label.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3098C0A222C61CD00ED70FE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3098C0B222C621C00ED70FE /* JoinChatViewController.swift */,
+				F3098C0F222C695000ED70FE /* SocketRoomViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +184,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3098C1D222C74E900ED70FE /* Main.storyboard in Resources */,
 				F3098BFA222C5D5900ED70FE /* LaunchScreen.storyboard in Resources */,
 				F3098BF7222C5D5900ED70FE /* Assets.xcassets in Resources */,
-				F3098BF5222C5D5800ED70FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,28 +197,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3098BF2222C5D5800ED70FE /* ViewController.swift in Sources */,
+				F3098C0E222C67FE00ED70FE /* UIViewControllerExtensions.swift in Sources */,
+				F3098C16222C6CF100ED70FE /* MessageInputView.swift in Sources */,
+				F3098C05222C5E0300ED70FE /* SocketMessage.swift in Sources */,
+				F3098C14222C6BBE00ED70FE /* MessageTableViewCell.swift in Sources */,
+				F3098C18222C6D6000ED70FE /* Label.swift in Sources */,
+				F3098C10222C695000ED70FE /* SocketRoomViewController.swift in Sources */,
+				F3098C03222C5DB600ED70FE /* SocketRoom.swift in Sources */,
+				F3098C12222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift in Sources */,
 				F3098BF0222C5D5800ED70FE /* AppDelegate.swift in Sources */,
+				F3098C1A222C6DAB00ED70FE /* Layouts.swift in Sources */,
+				F3098C08222C5E9D00ED70FE /* StringExtenstions.swift in Sources */,
+				F3098C0C222C621C00ED70FE /* JoinChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3098BF3222C5D5800ED70FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3098BF4222C5D5800ED70FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F3098BF8222C5D5900ED70FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F3098BF9222C5D5900ED70FE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F3098C1B222C74E900ED70FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3098C1C222C74E900ED70FE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
