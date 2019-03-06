@@ -11,13 +11,25 @@ import UIKit
 extension SocketRoomViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = MessageTableViewCell(style: .default, reuseIdentifier: "MessageCell")
-        cell.selectionStyle = .none
         
         let message = messages[indexPath.row]
-        cell.apply(message: message)
         
-        return cell
+        if message.senderUsername.contains("has joined") {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SomeoneEntered", for: indexPath) as! JoinedTableViewCell
+            cell.joinedLabel.text = message.senderUsername
+            return cell
+        } else if message.messageSender == .ourself {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MyMessages", for: indexPath) as! MyTableViewCell
+            cell.myMessageLabel.text = message.message
+            return cell
+        } else if message.messageSender == .someoneElse {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OtherMessages", for: indexPath) as! OtherTableViewCell
+            cell.userNameLabel.text = message.senderUsername
+            cell.messageLabel.text = message.message
+            return cell
+        }
+        return UITableViewCell()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -28,17 +40,10 @@ extension SocketRoomViewController: UITableViewDataSource, UITableViewDelegate {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let height = MessageTableViewCell.height(for: messages[indexPath.row])
-        return height
-    }
-    
     func insertNewMessageCell(_ message: SocketMessage) {
         messages.append(message)
-        let indexPath = IndexPath(row: messages.count - 1, section: 0)
-        tableView.beginUpdates()
-        tableView.insertRows(at: [indexPath], with: .bottom)
-        tableView.endUpdates()
+        tableView.reloadData()
+        let indexPath = IndexPath(row: messages.count-1, section: 0)
         tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
 }

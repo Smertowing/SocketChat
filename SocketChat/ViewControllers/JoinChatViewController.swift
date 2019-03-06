@@ -20,7 +20,7 @@ class JoinChatViewController: UIViewController {
     
     @IBAction func joinChat(_ sender: Any) {
         
-        let roomVC = SocketRoomViewController()
+        let roomVC = self.storyboard?.instantiateViewController(withIdentifier: "RoomID") as! SocketRoomViewController
         
         if let ipString = ipTextField.text {
             let characterset = CharacterSet(charactersIn: ".0123456789")
@@ -48,7 +48,8 @@ class JoinChatViewController: UIViewController {
             }
         }
         
-        navigationController?.pushViewController(roomVC, animated: true)
+        self.show(roomVC, sender: self)
+
     }
     
     

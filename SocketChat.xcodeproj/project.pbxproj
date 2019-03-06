@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F30960AF223072B200E083B1 /* JoinedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30960AE223072B200E083B1 /* JoinedTableViewCell.swift */; };
+		F30960B1223072C400E083B1 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30960B0223072C400E083B1 /* MyTableViewCell.swift */; };
+		F30960B3223072D000E083B1 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30960B2223072D000E083B1 /* OtherTableViewCell.swift */; };
 		F3098BF0222C5D5800ED70FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098BEF222C5D5800ED70FE /* AppDelegate.swift */; };
 		F3098BF7222C5D5900ED70FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3098BF6222C5D5900ED70FE /* Assets.xcassets */; };
 		F3098BFA222C5D5900ED70FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3098BF8222C5D5900ED70FE /* LaunchScreen.storyboard */; };
@@ -17,14 +20,13 @@
 		F3098C0E222C67FE00ED70FE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C0D222C67FE00ED70FE /* UIViewControllerExtensions.swift */; };
 		F3098C10222C695000ED70FE /* SocketRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C0F222C695000ED70FE /* SocketRoomViewController.swift */; };
 		F3098C12222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */; };
-		F3098C14222C6BBE00ED70FE /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C13222C6BBE00ED70FE /* MessageTableViewCell.swift */; };
-		F3098C16222C6CF100ED70FE /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C15222C6CF100ED70FE /* MessageInputView.swift */; };
-		F3098C18222C6D6000ED70FE /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C17222C6D6000ED70FE /* Label.swift */; };
-		F3098C1A222C6DAB00ED70FE /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C19222C6DAB00ED70FE /* Layouts.swift */; };
 		F3098C1D222C74E900ED70FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3098C1B222C74E900ED70FE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F30960AE223072B200E083B1 /* JoinedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedTableViewCell.swift; sourceTree = "<group>"; };
+		F30960B0223072C400E083B1 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F30960B2223072D000E083B1 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
 		F3098BEC222C5D5800ED70FE /* SocketChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3098BEF222C5D5800ED70FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3098BF6222C5D5900ED70FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,10 +39,6 @@
 		F3098C0D222C67FE00ED70FE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		F3098C0F222C695000ED70FE /* SocketRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRoomViewController.swift; sourceTree = "<group>"; };
 		F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRoomViewControllerExtension.swift; sourceTree = "<group>"; };
-		F3098C13222C6BBE00ED70FE /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
-		F3098C15222C6CF100ED70FE /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
-		F3098C17222C6D6000ED70FE /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		F3098C19222C6DAB00ED70FE /* Layouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
 		F3098C1C222C74E900ED70FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +53,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30960B4223072D400E083B1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F30960AE223072B200E083B1 /* JoinedTableViewCell.swift */,
+				F30960B0223072C400E083B1 /* MyTableViewCell.swift */,
+				F30960B2223072D000E083B1 /* OtherTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F3098BE3222C5D5800ED70FE = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +109,6 @@
 				F3098C07222C5E9D00ED70FE /* StringExtenstions.swift */,
 				F3098C0D222C67FE00ED70FE /* UIViewControllerExtensions.swift */,
 				F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */,
-				F3098C19222C6DAB00ED70FE /* Layouts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -110,9 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				F3098C1B222C74E900ED70FE /* Main.storyboard */,
-				F3098C13222C6BBE00ED70FE /* MessageTableViewCell.swift */,
-				F3098C15222C6CF100ED70FE /* MessageInputView.swift */,
-				F3098C17222C6D6000ED70FE /* Label.swift */,
+				F30960B4223072D400E083B1 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,15 +203,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3098C0E222C67FE00ED70FE /* UIViewControllerExtensions.swift in Sources */,
-				F3098C16222C6CF100ED70FE /* MessageInputView.swift in Sources */,
 				F3098C05222C5E0300ED70FE /* SocketMessage.swift in Sources */,
-				F3098C14222C6BBE00ED70FE /* MessageTableViewCell.swift in Sources */,
-				F3098C18222C6D6000ED70FE /* Label.swift in Sources */,
+				F30960AF223072B200E083B1 /* JoinedTableViewCell.swift in Sources */,
 				F3098C10222C695000ED70FE /* SocketRoomViewController.swift in Sources */,
+				F30960B1223072C400E083B1 /* MyTableViewCell.swift in Sources */,
 				F3098C03222C5DB600ED70FE /* SocketRoom.swift in Sources */,
 				F3098C12222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift in Sources */,
 				F3098BF0222C5D5800ED70FE /* AppDelegate.swift in Sources */,
-				F3098C1A222C6DAB00ED70FE /* Layouts.swift in Sources */,
+				F30960B3223072D000E083B1 /* OtherTableViewCell.swift in Sources */,
 				F3098C08222C5E9D00ED70FE /* StringExtenstions.swift in Sources */,
 				F3098C0C222C621C00ED70FE /* JoinChatViewController.swift in Sources */,
 			);
