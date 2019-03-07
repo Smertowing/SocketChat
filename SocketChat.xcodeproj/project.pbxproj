@@ -21,6 +21,7 @@
 		F3098C10222C695000ED70FE /* SocketRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C0F222C695000ED70FE /* SocketRoomViewController.swift */; };
 		F3098C12222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */; };
 		F3098C1D222C74E900ED70FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3098C1B222C74E900ED70FE /* Main.storyboard */; };
+		F34ED0282231319800330A27 /* attachmentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34ED0272231319800330A27 /* attachmentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F3098C0F222C695000ED70FE /* SocketRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRoomViewController.swift; sourceTree = "<group>"; };
 		F3098C11222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketRoomViewControllerExtension.swift; sourceTree = "<group>"; };
 		F3098C1C222C74E900ED70FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F34ED0272231319800330A27 /* attachmentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attachmentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		F3098BEE222C5D5800ED70FE /* SocketChat */ = {
 			isa = PBXGroup;
 			children = (
+				F34ED0272231319800330A27 /* attachmentHandler.swift */,
 				F3098C0A222C61CD00ED70FE /* ViewControllers */,
 				F3098C09222C61BB00ED70FE /* Views */,
 				F3098C06222C5E8600ED70FE /* Extensions */,
@@ -211,6 +214,7 @@
 				F3098C12222C6A9800ED70FE /* SocketRoomViewControllerExtension.swift in Sources */,
 				F3098BF0222C5D5800ED70FE /* AppDelegate.swift in Sources */,
 				F30960B3223072D000E083B1 /* OtherTableViewCell.swift in Sources */,
+				F34ED0282231319800330A27 /* attachmentHandler.swift in Sources */,
 				F3098C08222C5E9D00ED70FE /* StringExtenstions.swift in Sources */,
 				F3098C0C222C621C00ED70FE /* JoinChatViewController.swift in Sources */,
 			);

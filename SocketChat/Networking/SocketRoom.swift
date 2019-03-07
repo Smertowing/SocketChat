@@ -63,6 +63,10 @@ class SocketRoom: NSObject {
         }
     }
     
+    func sendImage(_ image: UIImage) {
+        
+    }
+    
     func stopChatSession() {
         inputStream.close()
         outputStream.close()

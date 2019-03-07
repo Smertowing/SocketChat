@@ -34,11 +34,13 @@ extension SocketRoomViewController: UITableViewDataSource, UITableViewDelegate {
             } else if message.messageSender == .ourself {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "MyMessages", for: indexPath) as! MyTableViewCell
                 cell.myMessageLabel.text = message.message
+                cell.myMessageLabel.sizeToFit()
                 return cell
             } else if message.messageSender == .someoneElse {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "OtherMessages", for: indexPath) as! OtherTableViewCell
                 cell.userNameLabel.text = message.senderUsername
                 cell.messageLabel.text = message.message
+                cell.messageLabel.sizeToFit()
                 return cell
             }
             return UITableViewCell()
@@ -64,4 +66,7 @@ extension SocketRoomViewController: UITableViewDataSource, UITableViewDelegate {
         let indexPath = IndexPath(row: messages.count-1, section: 0)
         tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
     }
+    
+    
 }
+

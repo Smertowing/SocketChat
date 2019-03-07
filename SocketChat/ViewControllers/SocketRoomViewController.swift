@@ -32,13 +32,26 @@ class SocketRoomViewController: UIViewController {
         }
     }
     
+    @IBAction func attachAction(_ sender: Any) {
+        AttachmentHandler.shared.showAttachmentActionSheet(vc: self)
+        AttachmentHandler.shared.imagePickedBlock = { (image) in
+            self.socketRoom.sendImage(image)
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 600
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -57,10 +70,12 @@ class SocketRoomViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        let sv = UIViewController.displaySpinner(onView: self.view)
+        sv.becomeFirstResponder()
         socketRoom.delegate = self
         socketRoom.setupNetworkCommunication(host: host, port: port)
         socketRoom.joinChat(username: username)
+        UIViewController.removeSpinner(spinner: sv)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
