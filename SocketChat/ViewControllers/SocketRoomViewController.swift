@@ -65,6 +65,7 @@ class SocketRoomViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        socketRoom.sendMessage(message: "has left.")
         socketRoom.stopChatSession()
     }
 }

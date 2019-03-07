@@ -85,7 +85,7 @@ func (c *Conns) broadcast(messages chan *MSG) {
 
 		for _, conn := range c.conns {
 			//Write user message to group
-      fmt.Println(msg.msg + "\n")
+      fmt.Println(msg.msg)
 			_, err := conn.Write([]byte(msg.msg))
 			if err != nil {
         c.Delete(msg.conn.RemoteAddr().String())
@@ -119,6 +119,8 @@ func initUser(conn *net.TCPConn) *User {
 }
 
 func main() {
+	CHOST := os.Args[1]
+	CPORT := os.Args[2]
 	//Create addr
 	addr, err := net.ResolveTCPAddr(CNET, CHOST+":"+CPORT)
 	handleError(err)
@@ -161,7 +163,7 @@ func handleRequest(conn *net.TCPConn, messages chan *MSG) {
 
 	msg := &MSG{
 		username: user.Username,
-		msg:      fmt.Sprintf("%s has joined\n", user.Username),
+		msg:      fmt.Sprintf("%s has joined", user.Username),
 		conn:     conn,
 		isLast:   false,
 	}

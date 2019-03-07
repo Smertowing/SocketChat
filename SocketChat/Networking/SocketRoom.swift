@@ -112,7 +112,7 @@ extension SocketRoom: StreamDelegate {
                                         length: Int) -> SocketMessage? {
         guard let stringArray = String(bytesNoCopy: buffer,
                                        length: length,
-                                       encoding: .ascii,
+                                       encoding: .utf8,
                                        freeWhenDone: true)?.components(separatedBy: ":"),
             let name = stringArray.first,
             let message = stringArray.last else {
