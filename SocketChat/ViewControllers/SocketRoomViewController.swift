@@ -32,13 +32,6 @@ class SocketRoomViewController: UIViewController {
         }
     }
     
-    @IBAction func attachAction(_ sender: Any) {
-        AttachmentHandler.shared.showAttachmentActionSheet(vc: self)
-        AttachmentHandler.shared.imagePickedBlock = { (image) in
-            self.socketRoom.sendImage(image)
-        }
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -52,20 +45,9 @@ class SocketRoomViewController: UIViewController {
     
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 600
-    }
-    
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height
-            }
-        }
-    }
-    
-    @objc func keyboardWillHide(notification: NSNotification) {
-        if self.view.frame.origin.y != 0 {
-            self.view.frame.origin.y = 0
-        }
+        
+        self.title = username
+        tableView.isUserInteractionEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,9 +65,25 @@ class SocketRoomViewController: UIViewController {
         socketRoom.sendMessage(message: "has left.")
         socketRoom.stopChatSession()
     }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
 }
 
 extension SocketRoomViewController: SocketRoomDelegate {
+    
     func receivedMessage(message: SocketMessage) {
         insertNewMessageCell(message)
     }

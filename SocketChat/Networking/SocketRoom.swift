@@ -23,6 +23,7 @@ class SocketRoom: NSObject {
     let maxReadLength = 1024
     
     func setupNetworkCommunication(host: String, port: UInt32) {
+        
         var readStream: Unmanaged<CFReadStream>?
         var writeStream: Unmanaged<CFWriteStream>?
         
@@ -43,15 +44,18 @@ class SocketRoom: NSObject {
         
         inputStream.open()
         outputStream.open()
+        
     }
     
     func joinChat(username: String) {
+        
         let data = "iam:\(username)".data(using: .utf8)!
         self.username = username
         _ = data.withUnsafeBytes {
             outputStream.write($0, maxLength: data.count)
             
         }
+        
     }
     
     func sendMessage(message: String) {
@@ -61,10 +65,6 @@ class SocketRoom: NSObject {
             outputStream.write($0, maxLength: data.count)
             
         }
-    }
-    
-    func sendImage(_ image: UIImage) {
-        
     }
     
     func stopChatSession() {
