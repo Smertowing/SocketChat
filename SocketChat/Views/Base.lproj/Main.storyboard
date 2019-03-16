@@ -168,6 +168,7 @@
                                             <constraints>
                                                 <constraint firstItem="zRq-3L-3Ha" firstAttribute="leading" secondItem="Oox-gl-2j8" secondAttribute="trailing" constant="8" id="Act-lF-g6c"/>
                                                 <constraint firstItem="zRq-3L-3Ha" firstAttribute="top" secondItem="qgb-n3-8Zp" secondAttribute="topMargin" id="NCY-5n-EER"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zRq-3L-3Ha" secondAttribute="trailing" constant="20" symbolic="YES" id="QVT-yk-7GO"/>
                                                 <constraint firstItem="Oox-gl-2j8" firstAttribute="top" secondItem="qgb-n3-8Zp" secondAttribute="topMargin" id="Qx4-kY-Ptp"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="zRq-3L-3Ha" secondAttribute="bottom" constant="8" id="UWM-vX-fCT"/>
                                                 <constraint firstItem="Oox-gl-2j8" firstAttribute="leading" secondItem="qgb-n3-8Zp" secondAttribute="leadingMargin" id="qsJ-WK-pb1"/>
@@ -199,6 +200,7 @@
                                                 <constraint firstItem="4jN-jJ-psi" firstAttribute="trailing" secondItem="WC7-TM-OXs" secondAttribute="trailingMargin" id="TiV-Z6-r2u"/>
                                                 <constraint firstItem="4jN-jJ-psi" firstAttribute="top" secondItem="WC7-TM-OXs" secondAttribute="topMargin" id="W5X-29-38v"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="4jN-jJ-psi" secondAttribute="bottom" constant="8" id="dsO-oD-FRF"/>
+                                                <constraint firstItem="4jN-jJ-psi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WC7-TM-OXs" secondAttribute="leading" constant="20" symbolic="YES" id="vUD-9g-n6q"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
